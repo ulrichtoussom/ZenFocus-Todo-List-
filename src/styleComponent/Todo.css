@@ -1,0 +1,25 @@
+
+:root{
+
+    --primary-neon : rgb(0, 210, 255)  ;
+    --card--todo :   rgb(15, 23, 42); 
+    --text-color : white ;
+}
+
+.todo {
+
+    display : flex ;
+    padding: 15px;
+    background: var(--card--todo);
+    border: 1px solid rgb(255, 255, 255,0.05);
+    color : var(--text-color) ;
+    justify-content: space-between;   
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.todo:hover{
+
+    transform: scale(1.01) translateY(-3px);
+    background: rgba(15, 23, 42,0.9)
+}
