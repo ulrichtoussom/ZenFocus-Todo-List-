@@ -3,9 +3,8 @@ import { useEffect, useRef, useState } from "react"
 
 
 
-export default function Input() {
+export default function Input({value, setValue}) {
   
-    const[value , setValue] = useState('')
     const ref = useRef()
 
     useEffect(()=>{
