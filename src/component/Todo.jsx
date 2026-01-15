@@ -1,14 +1,14 @@
 
 import '../styleComponent/Todo.css'
+import SuppButton from './SuppButton'
 
 
-export default function Todo({id , title}){
-
+export default function Todo({id , title, handleTodos}){
 
     return(
-        <div className="todo">
+        <div className="todo" id={id}>
             <span> {title} </span>
-            <button id={id} type="button" className='btn btn-sm btn-danger'>supprimer</button>
+            <SuppButton title='Supprimer' todoId={id} handleTodos={handleTodos} />
         </div>
     )
 }

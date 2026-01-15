@@ -26,9 +26,8 @@ export const useFetchData = function(options){
         
         })
         .then(res =>{ 
-            localStorage.clear()
-            if(!localStorage.getItem['mytodos']){
-
+            if(!localStorage.getItem('mytodos')){
+                //localStorage.clear()
                 let formatData = []
 
                 for (let i=0 ; i<=5; i++){

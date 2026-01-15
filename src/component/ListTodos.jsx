@@ -3,7 +3,7 @@ import Todo from "./Todo"
 
 
 
-export default function ListTodos({todos}){
+export default function ListTodos({todos, handleTodos}){
 
 
     return(
@@ -12,7 +12,7 @@ export default function ListTodos({todos}){
 
            {
             todos.map( todo => {
-                return <Todo key={todo.id} id={todo.id} title={todo.title} />
+                return <Todo key={todo.id} id={todo.id} title={todo.title} handleTodos={handleTodos} />
             })
            }
 
